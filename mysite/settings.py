@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$dh-lopvze0=pg7%tpwzc^@_6%b9qet^p(&_bwk#rg@3d_@yl)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'henrique-cabrita.com', '209.97.181.154']
 
 
 # Application definition
@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mysite',
+    'food',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -128,5 +131,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'food:index'
 LOGIN_URL = 'login'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'pictures') 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'pictures')
 MEDIA_URL = '/pictures/'
