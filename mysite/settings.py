@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$dh-lopvze0=pg7%tpwzc^@_6%b9qet^p(&_bwk#rg@3d_@yl)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'henrique-cabrita.com', '209.97.181.154']
+ALLOWED_HOSTS = ['localhost', 'foodapp.henrique-cabrita.com', '209.97.181.154']
 
 
 # Application definition
